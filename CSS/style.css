@@ -1,0 +1,24 @@
+*{
+    background-color: rgb(69, 90, 101);
+
+}
+
+
+h1 {
+    color : rgb(220, 170, 0)
+}
+
+body {
+    color : whitesmoke
+}
+
+table {
+    
+    display: block;
+    text-align: center;
+}
+
+footer {
+    display: block;
+    text-align: center;
+}
