@@ -1,23 +1,79 @@
-*{
-    background-color: rgb(69, 90, 101);
-
-}
-
-
+/* Mode jour */
 h1 {
-    color : rgb(220, 170, 0)
+    color: rgb(220, 170, 0);
 }
 
 body {
-    color : whitesmoke
+    background-color: rgb(69, 90, 101);
+    color: whitesmoke; /* Ajout du point-virgule manquant */
+}
+
+/* Mode nuit */
+body.dark-mode {
+    background-color: rgb(30, 39, 43); /* Couleur sombre de fond */
+    color: whitesmoke;
+}
+
+body.dark-mode a {
+    color: #bb86fc; /* Couleur des liens en mode nuit */
 }
 
 table {
-    
     display: block;
     text-align: center;
 }
 
+#mode {
+    --toggle-size: 16px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 6.25em;
+    height: 3.125em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 0;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 99em;
+    position: absolute; /* Garder la position absolue */
+    top: 0; /* Positionné en haut à droite */
+    right: 0;
+    cursor: pointer;
+    font-size: var(--toggle-size);
+}
+
+#mode::before {
+    content: "";
+    width: 2.25em;
+    height: 2.25em;
+    position: absolute;
+    top: 0.438em;
+    left: 0.438em;
+    background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
+    background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
+    background-size: 205%;
+    background-position: 100%;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+}
+
+#mode:checked::before {
+    left: calc(100% - 2.25em - 0.438em);
+    background-position: 0;
+}
+
+#mode:checked {
+    background-position: 100%;
+}
+
+/* Style du footer */
 footer {
     display: block;
     text-align: center;
