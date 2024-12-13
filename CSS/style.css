@@ -39,8 +39,8 @@ table {
     -o-transition: 0.4s;
     transition: 0.4s;
     border-radius: 99em;
-    position: absolute; /* Garder la position absolue */
-    top: 0; /* Positionné en haut à droite */
+    position: absolute; 
+    top: 0; 
     right: 0;
     cursor: pointer;
     font-size: var(--toggle-size);
@@ -73,8 +73,9 @@ table {
     background-position: 100%;
 }
 
-/* Style du footer */
 footer {
-    display: block;
     text-align: center;
+    padding: 10px;
+    color: #fff;
+    font-size: 14px;
 }
