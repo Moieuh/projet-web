@@ -21,3 +21,90 @@
         Tous droits réservés.<br>
         <a href="https://fonda.asso.fr/ressources/fiche-odd-ndeg2-faim-zero">En savoir plus?</a> </p>
 </footer>
+<body>
+    <form id="user-form">
+        <div>
+            <fieldset>
+                <legend>Qui sommes-nous?</legend>
+                <p><strong><u>Prénom :</u></strong> Henry <br>
+                    <strong><u>Nom :</u></strong> Ye <br>
+                    <strong><u>Groupe :</u></strong> B
+                </p>
+                <p><strong><u>Prénom :</u></strong> Ali <br>
+                    <strong><u>Nom :</u></strong> Belhassen <br>
+                    <strong><u>Groupe :</u></strong> B
+                </p>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Description</legend>
+                <p>
+                    Nous sommes 2 étudiants en première année du cycle ingénieur à l'efrei.
+                    Afin de pouvoir valider notre projet de programmation web, nous avons décidé de créer cette page web.
+                    Tout en parlant d'un des sujets les plus importants dans notre monde,
+                    nous avons créé cette page dans l'espoir de vous exposer les problèmes liés à la faim dans le monde,
+                    dans l'espoir de vous sensibiliser sur le sujet.
+                </p>
+            </fieldset>
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Vos informations</legend>
+                <label for="Nom">Nom&nbsp;:</label>
+                <input type="text" id="Nom" name="Nom_Utilisateur" required>
+                <br>
+
+                <label for="Prénom">Prénom&nbsp;:</label>
+                <input type="text" id="Prénom" name="Prénom_Utilisateur" required>
+                <br>
+
+                <label for="Date">Date de naissance&nbsp;:</label>
+                <input type="date" id="Date" name="Date_Naissance_Utilisateur" required>
+                <br>
+
+                <label for="Mail">Adresse mail&nbsp;:</label>
+                <input type="email" id="Mail" name="Email_Utilisateur" required>
+                <br>
+
+                <label for="statut">Statut :</label>
+                <select name="statut" id="statut" required>
+                    <option value="">Choisissez un statut</option>
+                    <option value="étudiant">Étudiant</option>
+                    <option value="fonctionnaire">Fonctionnaire</option>
+                    <option value="retraité">Retraité</option>
+                    <option value="chef ou Cadre d'entreprise ">Chef/Cadre d'entreprise</option>                            
+                    <option value="salarié">Salarié</option>
+                    <option value="sans emploi">Sans emploi</option>
+                </select>
+                <br>
+
+                <label for="demande">Une question ou une remarque?</label>
+                <textarea id="demande" name="demande_utilisateur" rows="4" placeholder="Écrivez votre demande ici..." required></textarea>
+                <br>
+
+                <button type="submit">Envoyer</button>
+            </fieldset>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('user-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const nom = document.getElementById('Nom').value;
+            const prenom = document.getElementById('Prénom').value;
+            const email = document.getElementById('Mail').value;
+            const statut = document.getElementById('statut').value;
+            const demande = document.getElementById('demande').value;
+
+            if (nom && prenom && email && statut && demande) {
+                alert(`Merci ${prenom} ${nom} !\nVotre demande a été envoyée avec succès.\n\nDétails de la demande:\nEmail: ${email}\nStatut: ${statut}\nDemande: ${demande}`);
+            } else {
+                alert('Veuillez remplir tous les champs avant de soumettre.');
+            }
+        });
+    </script>
+</body>
