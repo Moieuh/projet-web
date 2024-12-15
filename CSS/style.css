@@ -178,7 +178,6 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-    position:relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -190,7 +189,7 @@ footer a {
     color: #7810f7;
 }
 
-h1 {
+h1 ,h2 {
     color: rgb(220, 170, 0);
     text-align: center;  
 }
@@ -230,3 +229,54 @@ h1 {
 .rolling {
     animation: roll 0.5s ease-in-out;
 }
+
+      .section {
+        display: flex;
+        align-items: flex-start;
+        margin: 20px 0;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .section img {
+        max-width: 150px;
+        margin-right: 20px;
+        border-radius: 5px;
+      }
+      .section-content {
+        max-width: 650px;
+      }
+      h3 {
+        margin-top: 0;
+        margin-bottom: 10px;
+      }
+      p {
+        margin: 0;
+        line-height: 1.6;
+      }
+      table, td, th {
+        border: 1px solid rgb(255, 255, 255);
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+    th {
+        background-color: rgb(50, 50, 50);
+        color: white;
+    }
+ 
+    ul {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+    #count{
+        margin-bottom: 100px;
+    }
