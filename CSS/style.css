@@ -12,10 +12,6 @@ html, body {
     color: whitesmoke;
 }
 
-body.dark-mode {
-    background-color: rgb(30, 39, 43);
-}
-
 header {
     position: relative;
     width: 100%;
@@ -108,6 +104,7 @@ header h1{
     align-items: flex-start;
     color: white;
 }
+
 
 .info-container {
     display: flex;
@@ -230,7 +227,7 @@ h1 ,h2 {
     animation: roll 0.5s ease-in-out;
 }
 
-      .section {
+.section {
         display: flex;
         align-items: flex-start;
         margin: 20px 0;
@@ -238,45 +235,72 @@ h1 ,h2 {
         border-radius: 8px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
-      .section img {
+.section img {
         max-width: 150px;
         margin-right: 20px;
         border-radius: 5px;
       }
-      .section-content {
+.section-content {
         max-width: 650px;
       }
-      h3 {
+h3 {
         margin-top: 0;
         margin-bottom: 10px;
       }
-      p {
+p {
         margin: 0;
         line-height: 1.6;
       }
-      table, td, th {
+table, td, th {
         border: 1px solid rgb(255, 255, 255);
     }
-    table {
+table {
         width: 100%;
         border-collapse: collapse;
         margin-top: 20px;
     }
-    th, td {
+th, td {
         padding: 10px;
         text-align: left;
     }
-    th {
+th {
         background-color: rgb(50, 50, 50);
         color: white;
     }
  
-    ul {
-        color: white;
-    }
-    p {
-        color: white;
-    }
-    #count{
+#count{
         margin-bottom: 100px;
+    }
+
+body.dark-mode {
+        background-color: rgb(238, 240, 242);
+    }
+body.dark-mode .containercoun {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+body.dark-mode .container {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+body.dark-mode .section {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+
+body.dark-mode header{
+        background-color: rgb(255, 255, 255);
+    }
+
+body.dark-mode table, td, th {
+        border: 1px solid rgb(0, 0, 0);
+    }
+body.dark-mode th {
+        background-color: rgb(222, 220, 220);
+        color: black;
+    }
+
+    body.dark-mode .info{
+        background-color: rgb(222, 220, 220);
+        color: black;
     }
