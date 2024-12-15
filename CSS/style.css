@@ -18,23 +18,24 @@ header {
     height: auto;
     background-color: rgb(0, 0, 0);
     padding: 30px;
-
-
 }
-header h1{
+
+header h1 {
     text-align: center;
     color: rgb(220, 170, 0);
+    font-size:20px;
 }
+
 #logo {
     position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 75px;
-    height: 75px;
+    top: 0px;
+    left: 0px;
+    width: 70px;
+    height: 70px;
     border-radius: 5px;
     z-index: 20;
 }
-
+ 
 #mode {
     --toggle-size: 16px;
     width: 100px;
@@ -44,8 +45,8 @@ header h1{
     background-position: 0;
     border-radius: 50em;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
     z-index: 20;
     cursor: pointer;
     transition: 0.4s;
@@ -72,13 +73,14 @@ header h1{
     left: calc(100% - 36px - 7px);
 }
 
-#separator{
+#separator {
     position: relative;
     width: 100%;
     height: auto;
     background-color: rgb(220, 170, 0);
     padding: 2px;
 }
+
 .containercoun {
     background-color: rgb(34, 34, 34);
     padding: 20px;
@@ -89,8 +91,9 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+    flex-wrap: wrap;
 }
+
 .container {
     background-color: rgb(34, 34, 34);
     padding: 20px;
@@ -105,12 +108,12 @@ header h1{
     color: white;
 }
 
-
 .info-container {
     display: flex;
     margin: auto;
-    gap: 200px;
-    height:auto ;
+    gap: 20px;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 .info {
@@ -118,6 +121,7 @@ header h1{
     background-color: rgb(50, 50, 50);
     padding: 15px;
     border-radius: 10px;
+    min-width: 280px;
 }
 
 .container legend {
@@ -134,12 +138,12 @@ header h1{
 }
 
 nav {
-
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
     gap: 20px;
     width: 100%;
+    flex-wrap: wrap;
     z-index: 6;
 }
 
@@ -148,10 +152,12 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
+    max-width: 300px;
 }
 
 .nav-item img {
-    max-width: 300px;
+    max-width: 100%;
     border-radius: 10px;
     height: auto;
     transition: transform 0.3s ease;
@@ -169,8 +175,6 @@ nav {
     border-radius: 10px;
 }
 
-
-
 footer {
     text-align: center;
     padding: 10px;
@@ -186,16 +190,16 @@ footer a {
     color: #7810f7;
 }
 
-h1 ,h2 {
+h1, h2 {
     color: rgb(220, 170, 0);
-    text-align: center;  
+    text-align: center;
 }
 
-.counter { 
+.counter {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2em; 
+    font-size: 2em;
     font-weight: bold;
     flex-wrap: wrap;
 }
@@ -203,7 +207,7 @@ h1 ,h2 {
 .digit {
     position: relative;
     width: 40px;
-    height: 50px; 
+    height: 50px;
     margin: 5px;
     background: #333;
     color: white;
@@ -228,79 +232,152 @@ h1 ,h2 {
 }
 
 .section {
-        display: flex;
-        align-items: flex-start;
-        margin: 20px 0;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+}
+
 .section img {
-        max-width: 150px;
-        margin-right: 20px;
-        border-radius: 5px;
-      }
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
 .section-content {
-        max-width: 650px;
-      }
+    max-width: 100%;
+}
+
 h3 {
-        margin-top: 0;
-        margin-bottom: 10px;
-      }
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
 p {
-        margin: 0;
-        line-height: 1.6;
-      }
+    margin: 0;
+    line-height: 1.6;
+}
+
 table, td, th {
-        border: 1px solid rgb(255, 255, 255);
-    }
+    border: 1px solid rgb(255, 255, 255);
+}
+
 table {
-        width: 100%;
-        border-collapse: collapse;
-        margin-top: 20px;
-    }
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
 th, td {
-        padding: 10px;
-        text-align: left;
-    }
+    padding: 10px;
+    text-align: left;
+}
+
 th {
-        background-color: rgb(50, 50, 50);
-        color: white;
-    }
- 
-#count{
-        margin-bottom: 100px;
-    }
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+#count {
+    margin-bottom: 100px;
+}
 
 body.dark-mode {
-        background-color: rgb(238, 240, 242);
-    }
-body.dark-mode .containercoun {
-        background-color: rgb(255, 255, 255);
-        color: black;
-    }
-body.dark-mode .container {
-        background-color: rgb(255, 255, 255);
-        color: black;
-    }
-body.dark-mode .section {
-        background-color: rgb(255, 255, 255);
-        color: black;
-    }
+    background-color: rgb(238, 240, 242);
+}
 
-body.dark-mode header{
-        background-color: rgb(255, 255, 255);
-    }
+body.dark-mode .containercoun {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+body.dark-mode .container {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+body.dark-mode .section {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+body.dark-mode header {
+    background-color: rgb(255, 255, 255);
+}
 
 body.dark-mode table, td, th {
-        border: 1px solid rgb(0, 0, 0);
-    }
+    border: 1px solid rgb(0, 0, 0);
+}
+
 body.dark-mode th {
-        background-color: rgb(222, 220, 220);
-        color: black;
+    background-color: rgb(222, 220, 220);
+    color: black;
+}
+
+body.dark-mode .info {
+    background-color: rgb(222, 220, 220);
+    color: black;
+}
+
+
+@media (max-width: 1200px) {
+    .info-container {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
     }
 
-    body.dark-mode .info{
-        background-color: rgb(222, 220, 220);
-        color: black;
+    #logo {
+        width: 50px;
+        height: 50px;
     }
+
+    #mode {
+        width: 80px;
+        height: 40px;
+    }
+
+    .nav-item {
+        max-width: 150px;
+    }
+
+    .container {
+        padding: 15px;
+        margin-top: 50px;
+    }
+
+    .containercoun {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .section img {
+        max-width: 100px;
+    }
+
+    .info {
+        min-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    .nav-item {
+        max-width: 120px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
