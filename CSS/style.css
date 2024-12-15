@@ -83,8 +83,7 @@ header h1{
     background-color: rgb(220, 170, 0);
     padding: 2px;
 }
-
-.nav-container {
+.containercoun {
     background-color: rgb(34, 34, 34);
     padding: 20px;
     border-radius: 10px;
@@ -94,6 +93,47 @@ header h1{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    
+}
+.container {
+    background-color: rgb(34, 34, 34);
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(90% - 40px);
+    margin: 20px auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+}
+
+.info-container {
+    display: flex;
+    margin: auto;
+    gap: 200px;
+    height:auto ;
+}
+
+.info {
+    flex: 1;
+    background-color: rgb(50, 50, 50);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.container legend {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.container label, .container p {
+    margin: 5px 0;
+}
+
+#user-form {
+    color: white;
 }
 
 nav {
@@ -138,15 +178,55 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 14px;
-    position: fixed;
+    position:relative;
     bottom: 0;
     left: 0;
     width: 100%;
     background: rgb(220, 170, 0);
     color: #fff;
-    z-index: 1000;
 }
 
 footer a {
     color: #7810f7;
+}
+
+h1 {
+    color: rgb(220, 170, 0);
+    text-align: center;  
+}
+
+.counter { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; 
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.digit {
+    position: relative;
+    width: 40px;
+    height: 50px; 
+    margin: 5px;
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    overflow: hidden;
+}
+
+@keyframes roll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+.rolling {
+    animation: roll 0.5s ease-in-out;
 }

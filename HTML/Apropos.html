@@ -3,111 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Faim « zéro »- Apropos </title>
-    <link rel= "stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+    </style>
 </head>
-<input type="checkbox" id="mode" class="theme-checkbox">
-
-<header>
-    <input type="checkbox" id="mode" class="theme-checkbox">
-    <label for="mode" class="toggle-label"></label>
-    <h1> ODD n°2 - Faim « zéro »</h1>
-    <a href="./Accueil.html">
-        <img id="logo" src="../img/ODD_icon.png" alt="Logo_img">
-    </a>
-</header>
 <body>
+    <header>
+        <input type="checkbox" id="mode" class="theme-checkbox">
+        <label for="mode" class="toggle-label"></label>
+        <h1> ODD n°2 - Faim « zéro »</h1>
+        <a href="./Accueil.html">
+            <img id="logo" src="../img/ODD_icon.png" alt="Logo_img">
+        </a>
+    </header>
+
+    <div id="separator"></div>
     <form id="user-form">
-        <div>
-            <fieldset>
-                <legend>Qui sommes-nous?</legend>
-                <p><strong><u>Prénom :</u></strong> Henry <br>
-                    <strong><u>Nom :</u></strong> Ye <br>
-                    <strong><u>Groupe :</u></strong> B
-                </p>
-                <p><strong><u>Prénom :</u></strong> Ali <br>
-                    <strong><u>Nom :</u></strong> Belhassen <br>
-                    <strong><u>Groupe :</u></strong> B
-                </p>
-            </fieldset>
+        <div class="container">
+            <legend>Qui sommes-nous?</legend>
+            <div class="info-container">
+                <div class="info">
+                    <p><strong><u>Prénom :</u></strong> Henry <br>
+                        <strong><u>Nom :</u></strong> Ye <br>
+                        <strong><u>Groupe :</u></strong> B
+                    </p>
+                </div>
+                <div class="info">
+                    <p><strong><u>Prénom :</u></strong> Ali <br>
+                        <strong><u>Nom :</u></strong> Belhassen <br>
+                        <strong><u>Groupe :</u></strong> B
+                    </p>
+                </div>
+            </div>
         </div>
-        <br>
-        <div>
-            <fieldset>
-                <legend>Description</legend>
-                <p>
-                    Nous sommes deux étudiants, Henry et Ali, en première année du cycle ingénieur à l’Efrei. <br>
-                    Passionnés par le développement web et préoccupés par les enjeux sociaux, nous avons choisi de créer ce site dédié à la faim dans le monde. <br>
-                    Ce projet nous permet non seulement de mettre en pratique nos compétences en programmation, mais aussi de sensibiliser un maximum de personnes à cette problématique cruciale.<br>
-                    La faim touche des millions d’individus chaque jour, et il nous semble essentiel d’informer le public sur ses causes, ses conséquences, et les solutions possibles. <br>
-                    À travers ce site, nous espérons encourager chacun à agir, même modestement, pour réduire l’impact de ce fléau mondial.
-                </p>
-            </fieldset>
+
+        <div class="container">
+            <legend>Description</legend>
+            <p>
+                Nous sommes deux étudiants, Henry et Ali, en première année du cycle ingénieur à l’Efrei. <br>
+                Passionnés par le développement web et préoccupés par les enjeux sociaux, nous avons choisi de créer ce site dédié à la faim dans le monde. <br>
+                Ce projet nous permet non seulement de mettre en pratique nos compétences en programmation, mais aussi de sensibiliser un maximum de personnes à cette problématique cruciale.<br>
+                La faim touche des millions d’individus chaque jour, et il nous semble essentiel d’informer le public sur ses causes, ses conséquences, et les solutions possibles. <br>
+                À travers ce site, nous espérons encourager chacun à agir, même modestement, pour réduire l’impact de ce fléau mondial.
+            </p>
         </div>
-        <br>
-        <div>
-            <fieldset>
-                <legend>Vos informations</legend>
-                <label for="Nom">Nom&nbsp;:</label>
-                <input type="text" id="Nom" name="Nom_Utilisateur" required>
-                <br>
 
-                <label for="Prénom">Prénom&nbsp;:</label>
-                <input type="text" id="Prénom" name="Prénom_Utilisateur" required>
-                <br>
+        <div class="container">
+            <legend>Vos informations</legend>
+            <label for="Nom">Nom&nbsp;:</label>
+            <input type="text" id="Nom" name="Nom_Utilisateur" required>
+            <br>
 
-                <label for="Date">Date de naissance&nbsp;:</label>
-                <input type="date" id="Date" name="Date_Naissance_Utilisateur" required>
-                <br>
+            <label for="Prénom">Prénom&nbsp;:</label>
+            <input type="text" id="Prénom" name="Prénom_Utilisateur" required>
+            <br>
 
-                <label for="Mail">Adresse mail&nbsp;:</label>
-                <input type="email" id="Mail" name="Email_Utilisateur" required>
-                <br>
+            <label for="Date">Date de naissance&nbsp;:</label>
+            <input type="date" id="Date" name="Date_Naissance_Utilisateur" required>
+            <br>
 
-                <label for="statut">Statut :</label>
-                <select name="statut" id="statut" required>
-                    <option value="">Choisissez un statut</option>
-                    <option value="étudiant">Étudiant</option>
-                    <option value="fonctionnaire">Fonctionnaire</option>
-                    <option value="retraité">Retraité</option>
-                    <option value="chef ou Cadre d'entreprise ">Chef/Cadre d'entreprise</option>                            
-                    <option value="salarié">Salarié</option>
-                    <option value="sans emploi">Sans emploi</option>
-                </select>
-                <br>
+            <label for="Mail">Adresse mail&nbsp;:</label>
+            <input type="email" id="Mail" name="Email_Utilisateur" required>
+            <br>
 
-                <label for="demande">Une question ou une remarque?</label>
-                <textarea id="demande" name="demande_utilisateur" rows="4" placeholder="Écrivez votre demande ici..." required></textarea>
-                <br>
+            <label for="statut">Statut :</label>
+            <select name="statut" id="statut" required>
+                <option value="">Choisissez un statut</option>
+                <option value="étudiant">Étudiant</option>
+                <option value="fonctionnaire">Fonctionnaire</option>
+                <option value="retraité">Retraité</option>
+                <option value="chef ou Cadre d'entreprise ">Chef/Cadre d'entreprise</option>                            
+                <option value="salarié">Salarié</option>
+                <option value="sans emploi">Sans emploi</option>
+            </select>
+            <br>
 
-                <button type="submit">Envoyer</button>
-            </fieldset>
+            <label for="demande">Une question ou une remarque?</label>
+            <textarea id="demande" name="demande_utilisateur" rows="4" placeholder="Écrivez votre demande ici..." required></textarea>
+            <br>
+
+            <button type="submit">Envoyer</button>
         </div>
     </form>
 
-    <script>
-        document.getElementById('user-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-
-            const nom = document.getElementById('Nom').value;
-            const prenom = document.getElementById('Prénom').value;
-            const email = document.getElementById('Mail').value;
-            const statut = document.getElementById('statut').value;
-            const demande = document.getElementById('demande').value;
-
-            if (nom && prenom && email && statut && demande) {
-                alert(`Merci ${prenom} ${nom} !\nVotre demande a été envoyée avec succès.\n\nDétails de la demande:\nEmail: ${email}\nStatut: ${statut}\nDemande: ${demande}`);
-            } else {
-                alert('Veuillez remplir tous les champs avant de soumettre.');
-            }
-        });
-    </script>
-    <script src="../JS/script.js"></script>
-    
+    <footer>
+        <p>© 2024 Ali BELHASSEN & Henry YE.<br>
+            Tous droits réservés.<br>
+            <a href="https://fonda.asso.fr/ressources/fiche-odd-ndeg2-faim-zero">En savoir plus?</a> 
+        </p>
+    </footer>
 </body>
-<footer>
-    <p>©️2024 Ali BELHASSEN & Henry YE.<br>
-        Tous droits réservés.<br>
-        <a href="https://fonda.asso.fr/ressources/fiche-odd-ndeg2-faim-zero">En savoir plus?</a> </p>
-</footer>
 </html>
