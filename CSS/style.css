@@ -1,6 +1,16 @@
 /* Mode jour */
-h1 {
+h1, h2 {
     color: rgb(220, 170, 0);
+}
+
+h3 {
+    color:#d4d41e
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p {
+    color: rgb(255, 255, 255)
 }
 
 body {
@@ -16,6 +26,10 @@ body.dark-mode {
 
 body.dark-mode a {
     color: #bb86fc; /* Couleur des liens en mode nuit */
+}
+
+.container {
+    max-width : 60%;
 }
 
 table {
